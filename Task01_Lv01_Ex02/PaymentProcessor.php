@@ -1,0 +1,17 @@
+<?php
+declare(strict_types=1);
+
+class PaymentProcessor
+{
+    private PaymentGateway $gateway;
+
+    public function __construct(PaymentGateway $gateway)
+    {
+        $this->gateway = $gateway;
+    }
+
+    public function processPayment(float $amount): string
+    {
+        return $this->gateway->sendPayment($amount);
+    }
+}
