@@ -16,10 +16,6 @@ $resultsData1 = new Result($athlete1, $eventsData1,Medal::GOLD);
 $resultsData2 = new Result($athlete2, $eventsData2, Medal::GOLD);
 
 $olympics = new OlympicGames();
-$olympics->addAthlete($athlete1);
-$olympics->addAthlete($athlete2);
-$olympics->addEvent($eventsData1);
-$olympics->addEvent($eventsData2);
 
 $olympics->addResult($resultsData1);
 $olympics->addResult($resultsData2);

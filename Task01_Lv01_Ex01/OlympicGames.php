@@ -7,33 +7,11 @@ require_once "Event.php";
 
 class OlympicGames
 {
-    private array $athletes = [];
-    private array $events = [];
     private array $results = [];
-
-    public function getAthletes(): array
-    {
-        return $this->athletes;
-    }
-
-    public function getEvents(): array
-    {
-        return $this->events;
-    }
 
     public function getResults(): array
     {
         return $this->results;
-    }
-
-    public function addAthlete(Athlete $athlete): void
-    {
-        $this->athletes [] = $athlete;
-    }
-
-    public function addEvent(Event $event): void
-    {
-        $this->events [] = $event;
     }
 
     public function addResult(Result $result): void
